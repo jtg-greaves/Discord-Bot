@@ -1,0 +1,21 @@
+{
+    "name": "jtg-greaves",
+    "version": "1.0.0",
+    "description": "Custom bot made at https://db.jtgreaves.com",
+    "main": "index.js",
+    "scripts": {
+        "test": "/test"
+    },
+    "author": "Josh.#1514",
+    "license": "ISC",
+    "dependencies": {
+        "discord.js": "^11.6.2",
+        "discord.js-commando": "^0.10.0",
+        "moment": "^2.24.0",
+        "moment-timezone": "^0.5.28",
+        "mysql2": "^2.1.0",
+        "node-pre-gyp": "0.14.0",
+        "pg": "^8.1.0",
+        "pg-hstore": "^2.3.3"
+    }
+}

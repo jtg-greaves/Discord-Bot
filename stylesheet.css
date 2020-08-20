@@ -1,0 +1,234 @@
+html {
+    min-height: 100%;
+}
+
+body {
+    background-color: #36393f;
+    font-family: 'Roboto', sans-serif;
+}
+
+h1,
+button {
+    color: white;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 3vw;
+    margin: 0px;
+    font-family: 'Roboto', sans-serif;
+}
+
+#hbutton {
+    float: right;
+    width: 5%;
+    vertical-align: center;
+    font-size: 2.5vw;
+    background-color: transparent;
+    border: 0px;
+    z-index: 100;
+}
+
+#hbutton:hover {
+    cursor: help;
+}
+
+#header-wrapper {
+    background-color: #7289da;
+    top: 0%;
+    left: 0%;
+    margin: 0px;
+    width: 100%;
+    position: absolute;
+    margin-bottom: 20px;
+}
+
+#collapsible-wrapper {
+    padding-top: 75px;
+    width: 100%;
+    position: relative;
+    z-index: -1;
+}
+
+#under-form {
+    position: relative;
+    width: 90%;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+#under-form label {
+    color: white;
+}
+
+#under-form p {
+    color: lightsalmon;
+    text-align: center;
+}
+
+#left-column {
+    float: left;
+    width: 45%;
+    margin-left: 3.5%;
+    margin-right: 1.5%;
+}
+
+#right-column {
+    float: right;
+    width: 45%;
+    margin-right: 3.5%;
+    margin-left: 1.5%;
+}
+
+
+/* Forms  */
+
+input[type=text],
+input[type=number],
+select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type=submit] {
+    width: 10%;
+    background-color: #4CAF50;
+    position: fixed;
+    right: 0px;
+    bottom: 0px;
+    color: white;
+    padding: 14px 20px;
+    margin: 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+
+
+/* Colapsable */
+
+
+/* Style the button that is used to open and close the collapsible content */
+
+.collapsible {
+    background-color: #eee;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+}
+
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+
+.active,
+.collapsible:hover {
+    background-color: #ccc;
+}
+
+
+/* Style the collapsible content. Note: hidden by default */
+
+.content {
+    padding: 0 18px;
+    display: none;
+    overflow: hidden;
+    background-color: #f1f1f1;
+}
+
+.collapsible:after {
+    content: '\02795';
+    /* Unicode character for "plus" sign (+) */
+    font-size: 13px;
+    color: white;
+    float: right;
+    margin-left: 5px;
+}
+
+.active:after {
+    content: "\2796";
+    /* Unicode character for "minus" sign (-) */
+}
+
+
+/* Help Overlay */
+
+#overlay {
+    position: fixed;
+    /* Sit on top of the page content */
+    display: none;
+    /* Hidden by default */
+    width: 100%;
+    /* Full width (cover the whole page) */
+    height: 100%;
+    /* Full height (cover the whole page) */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgb(255, 255, 255);
+    /* Black background with opacity */
+    z-index: 1000;
+    /* Specify a stack order in case you're using a different order for other elements */
+    cursor: pointer;
+    /* Add a pointer on hover */
+}
+
+.sidebar {
+    background-color: #2F3136;
+    /* width: 17.5%; */
+    width: 20vw;
+    height: 100%;
+    float: left;
+}
+
+.sidebar-button {
+    height: 30px;
+    font-size: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    width: 100%;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.help-body {
+    float: right;
+    background-color: #36393f;
+    width: calc(100% - 20vw);
+    height: 100%;
+    overflow: hidden;
+}
+
+#help-header {
+    background-color: #36393F;
+    box-shadow: 0px 1px #2B2E32;
+    top: 0%;
+    right: 0%;
+    margin: 0px;
+    width: calc(100% - 20vw);
+    position: absolute;
+    margin-bottom: 20px;
+}
+
+#sidebar-header {
+    background-color: #2F3136;
+    box-shadow: 0px 1px #2B2E32;
+    top: 0%;
+    left: 0%;
+    margin: 0px;
+    width: calc(100% - 20vw);
+    position: absolute;
+    margin-bottom: 20px;
+}
